@@ -96,6 +96,11 @@ app.post(
   },
 );
 
+app.use("/api/health", async(req, res) =>{
+  res.json({status : "online"})
+})
+
+
 // JSON errors (multer rejects anything over 500 MB while streaming).
 app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
   const multerLike = err as { code?: string; message?: string };
