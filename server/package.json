@@ -1,0 +1,28 @@
+{
+  "name": "snapdrive-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SnapDrive backend: shared team login + uploads to one Google Drive folder",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "drive:auth": "tsx scripts/drive-auth.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
