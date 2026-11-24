@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SnapDrive Privacy Policy</title>
+<meta name="description" content="How SnapDrive accesses, uses, stores, and deletes data, including Google Drive data." />
+<style>
+  :root { color-scheme: light dark; --bg:#f4f7ff; --card:#ffffff; --text:#0f172a; --muted:#586079; --accent:#208aef; --border:#dbe3f4; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b1120; --card:#121a2c; --text:#e8eefc; --muted:#9aa7c2; --border:#25314b; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:52px 22px 72px; }
+  h1 { font-size:clamp(26px,4.5vw,34px); margin:0 0 6px; letter-spacing:-0.02em; }
+  .meta { color:var(--muted); font-size:14px; margin:0 0 28px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; }
+  h2 { font-size:18px; margin:26px 0 8px; }
+  h2:first-of-type { margin-top:0; }
+  p, li { color:var(--text); }
+  ul { padding-left:20px; }
+  a { color:var(--accent); }
+  .note { border-left:3px solid var(--accent); padding:10px 14px; background:rgba(32,138,239,0.08); border-radius:8px; margin:16px 0; }
+  footer { margin-top:26px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>SnapDrive Privacy Policy</h1>
+  <p class="meta">Effective date: November 24, 2026 · Applies to the SnapDrive Android app and its upload service.</p>
+
+  <div class="card">
+    <h2>1. Who we are</h2>
+    <p>SnapDrive is a small team camera app that uploads captured photos and videos to a shared Google Drive folder chosen by the team administrator. SnapDrive is operated for private, internal team use rather than as a public consumer service.</p>
+
+    <h2>2. Information the app processes</h2>
+    <ul>
+      <li><strong>Display name and team passcode.</strong> You type a name and a shared team passcode to join. The passcode is checked by the team's server; the app stores only your chosen name and a session token on your device (in encrypted storage).</li>
+      <li><strong>Photos and videos you capture.</strong> Media is captured with your permission and uploaded to Google Drive. Media may also be saved to your device's gallery when you allow it.</li>
+      <li><strong>Upload metadata.</strong> File name, media type, size, and timestamps are used to queue and transfer uploads.</li>
+      <li><strong>Camera and microphone.</strong> Used only while you are capturing photos or recording video with audio. The app does not record in the background.</li>
+    </ul>
+    <p>SnapDrive does not collect your contacts, precise location, advertising identifiers, or analytics/telemetry, and does not use tracking or advertising SDKs.</p>
+
+    <h2>3. Google Drive data</h2>
+    <p>The team administrator connects SnapDrive's upload service to Google Drive through Google's OAuth consent flow, granting the Drive scope. With that authorization, SnapDrive:</p>
+    <ul>
+      <li>Creates a subfolder for each uploader inside the one shared folder configured by the administrator.</li>
+      <li>Creates (uploads) photo and video files in that subfolder.</li>
+      <li>Looks up existing subfolders and files it created, so it does not duplicate them.</li>
+    </ul>
+    <div class="note">SnapDrive's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. SnapDrive does not read, modify, or delete Drive files outside the configured team folder, does not use Google user data for advertising, and does not sell Google user data or transfer it to third parties except as necessary to provide the upload feature or as required by law.</div>
+
+    <h2>4. Where data is stored</h2>
+    <ul>
+      <li><strong>On your device:</strong> your display name, session token, and the in-app upload queue. Media files remain on your device unless you delete them.</li>
+      <li><strong>On the team server:</strong> uploads pass through a self-hosted server that streams them to Google Drive. Its queue is kept in memory and cleared on restart; it does not maintain a database of your media.</li>
+      <li><strong>In Google Drive:</strong> the uploaded photo and video files, in the team folder and your personal subfolder. Access is controlled by Google and by whoever the folder is shared with.</li>
+    </ul>
+
+    <h2>5. Sharing</h2>
+    <p>Uploaded media is visible to the people the team Drive folder is shared with (typically the team members and administrator). SnapDrive does not sell, rent, or share personal data with advertisers or data brokers. Data may be disclosed if required by law.</p>
+
+    <h2>6. Retention and deletion</h2>
+    <ul>
+      <li>Delete media from Google Drive using Google Drive itself; the team administrator can remove files or your subfolder at any time.</li>
+      <li>Sign out in the app to remove your stored name and session token from the device; delete the app to remove all local app data.</li>
+      <li>To have your upload subfolder removed or to ask a question about your data, contact the administrator at the address below. We respond within 30 days.</li>
+    </ul>
+
+    <h2>7. Security</h2>
+    <p>The app sends uploads to the team server over the network your administrator configures, and the server connects to Google Drive over HTTPS using Google's official API. Session tokens are stored in the device's encrypted secure storage. No method of transmission or storage is completely secure, but we take reasonable measures to protect your data.</p>
+
+    <h2>8. Children</h2>
+    <p>SnapDrive is intended for use by team members and is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this policy from time to time. Material changes will be reflected by a new effective date on this page.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions or deletion requests: <a href="mailto:kaj882626@gmail.com">kaj882626@gmail.com</a></p>
+  </div>
+
+  <footer>
+    <p><a href="./index.html">← SnapDrive home</a></p>
+  </footer>
+</div>
+</body>
+</html>

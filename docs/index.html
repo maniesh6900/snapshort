@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SnapDrive — team camera roll for Google Drive</title>
+<meta name="description" content="SnapDrive is a small team camera app that uploads photos and videos straight into one shared Google Drive folder, with a subfolder for each person." />
+<style>
+  :root { color-scheme: light dark; --bg:#f4f7ff; --card:#ffffff; --text:#0f172a; --muted:#586079; --accent:#208aef; --border:#dbe3f4; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b1120; --card:#121a2c; --text:#e8eefc; --muted:#9aa7c2; --border:#25314b; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:56px 22px 72px; }
+  header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  .mark { width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg,#208aef,#66d3ff); display:grid; place-items:center; font-size:22px; }
+  h1 { font-size:clamp(28px,5vw,40px); line-height:1.15; margin:24px 0 10px; letter-spacing:-0.02em; }
+  .lede { color:var(--muted); font-size:18px; margin:0 0 32px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px; margin:16px 0; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  ul { margin:8px 0 0; padding-left:20px; }
+  li { margin:6px 0; }
+  a { color:var(--accent); }
+  footer { margin-top:36px; padding-top:18px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; display:flex; flex-wrap:wrap; gap:16px; }
+  .pill { display:inline-block; font-size:13px; color:var(--muted); border:1px solid var(--border); border-radius:999px; padding:3px 10px; margin-top:6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">📷</div>
+    <strong>SnapDrive</strong>
+  </header>
+
+  <h1>One shared camera roll for your team, straight into Google Drive.</h1>
+  <p class="lede">SnapDrive is an Android camera app for small teams. Photos and videos you capture are uploaded to a single shared Google Drive folder, with a subfolder for each person.</p>
+  <span class="pill">Android app · Google Drive storage · No ads, no tracking</span>
+
+  <div class="card">
+    <h2>What the app does</h2>
+    <ul>
+      <li>Take photos and record videos with a simple camera screen (zoom, front/rear camera, flash/torch, grid).</li>
+      <li>Upload each capture automatically to your team's shared Google Drive folder, inside a subfolder named after the person who captured it.</li>
+      <li>Join a team with a name and a shared team passcode. No SnapDrive account, email address, or password is stored by the app.</li>
+      <li>Keep a queue of uploads with clear pending, in-progress, failed, and completed states, plus retry for failures.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Google Drive access</h2>
+    <p>SnapDrive's backend is connected to Google Drive by the team's administrator using Google's OAuth consent flow. The app only creates files and folders inside the one Drive folder the administrator configures; it does not read, modify, or delete your other Drive files. Uploaded media belongs to the Google account that owns that folder.</p>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <p>SnapDrive does not sell data, show ads, or use analytics. It does not collect your contacts, location, or advertising identifiers.</p>
+    <p>Read the full <a href="./privacy.html">SnapDrive Privacy Policy</a> for details on what is stored and how to delete it.</p>
+  </div>
+
+  <footer>
+    <span>SnapDrive</span>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="mailto:kaj882626@gmail.com">Contact</a>
+  </footer>
+</div>
+</body>
+</html>
